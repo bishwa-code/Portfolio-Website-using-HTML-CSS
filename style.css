@@ -1044,15 +1044,15 @@ footer {
   }
 
   .project-number {
-    font-size: 8rem;
+    font-size: 5rem;
   }
 
   .project-number-left {
-    top: -2%;
+    top: 2%;
     left: 6%;
   }
   .project-number-right {
-    top: -2%;
+    top: 2%;
     right: 6%;
   }
 
