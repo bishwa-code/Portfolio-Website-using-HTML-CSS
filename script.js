@@ -14,15 +14,12 @@ let typeData = new Typed(".animate-typing", {
 
 function overlayNavbar() {
   let navIcon = document.getElementById("nav-icon");
-  let fullScreenNavbar = document.getElementById("fullscreen-navbar");
 
   if (navIcon.classList.contains("fa-bars")) {
     navIcon.classList.remove("fa-bars");
     navIcon.classList.add("fa-xmark");
-    fullScreenNavbar.style.left = "0";
   } else {
     navIcon.classList.remove("fa-xmark");
     navIcon.classList.add("fa-bars");
-    fullScreenNavbar.style.left = "-100%";
   }
 }
