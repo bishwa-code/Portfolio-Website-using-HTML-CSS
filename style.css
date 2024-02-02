@@ -213,7 +213,7 @@ html {
   bottom: -8%;
   animation-name: slowmo;
   animation-duration: 6s;
-  animation-timing-function: linear;
+  animation-timing-function: ease-out;
   animation-iteration-count: infinite;
 }
 
@@ -926,7 +926,7 @@ footer {
 
   .hero-section {
     flex-direction: column;
-    gap: 8rem;
+    gap: 6rem;
     padding: 0 2.6rem;
     margin: 7rem auto;
     padding-bottom: 5rem;
@@ -959,20 +959,14 @@ footer {
   }
 
   .hero-right {
-    width: 100%;
-  }
-
-  .hero-image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    height: 350px;
+    width: 50%;
   }
 
   .hero-image img {
     border-radius: 90px;
-    filter: grayscale(0.8) drop-shadow(2.6rem 1.8rem 0 #4444dd);
-    height: 80%;
-    width: 80%;
+    filter: grayscale(0.8) drop-shadow(2rem 1.5rem 0 #4444dd);
   }
 
   .hero-image img:hover {
@@ -981,7 +975,7 @@ footer {
   }
 
   .icon-cube {
-    top: -6%;
+    top: -7%;
     right: 18%;
   }
 
@@ -998,29 +992,29 @@ footer {
   }
 
   .icon-plus {
-    left: 88%;
-    bottom: -12%;
+    left: 98%;
+    bottom: -8%;
   }
 
   .icon-circle {
-    left: 0%;
+    left: -12%;
     bottom: 10%;
   }
 
   @keyframes shakey {
     0% {
-      left: 0%;
+      left: -12%;
       bottom: 10%;
     }
     100% {
-      left: 0%;
+      left: -12%;
       bottom: 35%;
     }
   }
 
   .text-faded {
     font-size: 5.5rem;
-    bottom: -10.3%;
+    bottom: -12.2%;
     left: 2%;
   }
 
@@ -1226,7 +1220,7 @@ footer {
   }
 
   .navbar {
-    padding: 2rem 1rem 0 1rem;
+    padding: 1rem 1rem 0;
   }
 
   .logo {
@@ -1263,10 +1257,9 @@ footer {
 
   .hero-section {
     flex-direction: column;
-    gap: 5rem;
-    padding: 0 2.6rem;
-    margin: 4rem auto;
-    padding-bottom: 4rem;
+    gap: 4.5rem;
+    padding: 0 2.6rem 4rem;
+    margin: 3rem auto;
   }
 
   .hero-left {
@@ -1298,85 +1291,79 @@ footer {
   }
 
   .hero-right {
-    width: 100%;
-  }
-
-  .hero-image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    height: 175px;
+    width: 60%;
   }
 
   .hero-image img {
-    border-radius: 55px;
-    filter: grayscale(0.8) drop-shadow(1.2rem 1.2rem 0 #4444dd);
-    height: 80%;
-    width: 80%;
+    border-radius: 4.5rem;
+    filter: grayscale(0.8) drop-shadow(0.8rem 0.8rem 0 #4444dd);
   }
 
   .hero-image img:hover {
-    filter: grayscale(0) drop-shadow(0 0 1.2rem #6692f1);
+    filter: grayscale(0) drop-shadow(0 0 0.6rem #6692f1);
     transform: scale(1.03);
   }
 
   .icon-cube {
-    top: -6%;
-    right: 18%;
+    top: -11%;
+    right: 3%;
   }
 
   @keyframes cubeRotate {
     0% {
-      transform: scale(0.65) rotateY(0deg) translateY(0px);
+      transform: scale(0.55) rotateY(0deg) translateY(0px);
     }
     50% {
-      transform: scale(0.65) rotateY(180deg) translateY(-1rem);
+      transform: scale(0.55) rotateY(180deg) translateY(-1rem);
     }
     100% {
-      transform: scale(0.65) rotateY(360deg) translateY(0px);
+      transform: scale(0.55) rotateY(360deg) translateY(0px);
     }
   }
 
   .icon-plus {
-    left: 85%;
-    bottom: -15%;
+    left: 88%;
+    bottom: -17%;
   }
 
   @keyframes slowmo {
     0% {
-      transform: scale(0.65) rotate(270deg);
+      transform: scale(0.6) rotate(270deg);
     }
     50% {
-      transform: scale(0.75) rotate(300deg);
+      transform: scale(0.68) rotate(300deg);
     }
     100% {
-      transform: scale(0.65) rotate(270deg);
+      transform: scale(0.6) rotate(270deg);
     }
   }
 
   .icon-circle {
-    left: 0%;
+    left: -15%;
     bottom: 10%;
   }
 
   @keyframes shakey {
     0% {
-      left: 0%;
+      left: -15%;
       bottom: 10%;
-      transform: scale(0.65);
+      transform: scale(0.6);
     }
     100% {
-      left: 0%;
+      left: -15%;
       bottom: 35%;
-      transform: scale(0.65);
+      transform: scale(0.6);
     }
   }
 
   .text-faded {
-    font-size: 3rem;
-    bottom: -9.3%;
+    font-size: 2.8rem;
+    bottom: -8%;
     left: 2%;
   }
-
+  
   .project-header {
     font-size: 4.5rem;
     padding-top: 3rem;
@@ -1414,7 +1401,7 @@ footer {
   }
 
   .project-skill {
-    width: 1rem;
+    width: 1.2rem;
   }
 
   .project-heading {
@@ -1448,7 +1435,7 @@ footer {
 
   .skill-faded-text {
     font-size: 7rem;
-    top: 99%;
+    top: 99.2%;
     left: 40%;
   }
 
@@ -1484,6 +1471,7 @@ footer {
   .skill-sub-heading {
     font-size: 1.2rem;
     margin-top: 1.4rem;
+    width: 100%;
   }
 
   .skill-sub-heading p {
@@ -1567,8 +1555,9 @@ footer {
   .foot-faded-text {
     font-size: 4rem;
   }
-  
+
   .foot-icons-container a:not(:last-child) {
     margin-right: 2rem;
   }
+}
 }
